@@ -16,15 +16,23 @@
         <button type="submit">Submit</button>
     </form>
     <?php
-    
-    
-    
-    $lunghezze=isset($_Get ['lunghezza']);
- 
-    $lettereNumeri = ['a','b','f','d','@','w','*','d','f','!','g','r','?','ì','9','1','3','4','5','3','2','3','4','£',];
 
-     echo $lunghezze;
 
+   
+
+    function pswrdGenerator () {
+        $lunghezzaScelta =(int)$_GET['lunghezza'];
+        $alfabeto = "abcdefghi123456789ABCDEFGHI+*ù§#@!?";
+        $pswd = array();
+        $alfabetoLunghezza = strlen($alfabeto) - 1;
+        for ($i = 0; $i < $lunghezzaScelta; $i++) {
+            $numeroCaratteri = rand(0, $alfabetoLunghezza);
+            $pswd[] = $alfabeto[$numeroCaratteri];
+        }
+        return implode($pswd);
+    };
+
+  var_dump( pswrdGenerator());
 
     ?>
 
