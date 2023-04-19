@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.redBg{
+    background-color: rgb(164, 56, 56);
+}
+.impossible{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.txtAlign{
+    text-align: center;
+}
+.form{
+    padding: 20px 0;
+}
+.p20t{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px 0;
+}
+.redirect-page{
+
+}
